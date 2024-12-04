@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="design.css" >
+        <title>Document</title>
+    </head>
+        <body>
+            <img src="divide.png" class="dividepic">
+            <img src="plus.png" class="pluspic">
+            <img src="mult.png" class="multpic">
+            <img src="sub.png" class="subpic">
+            <div class="grid">
+                <div class="led-display">
+                    <span id="led-text"></span> 
+                </div>
+                <button class="plusButton" onclick="math_expr('+')">+</button>
+                <button class="equalButton" onclick="equal_press('=')">=</button>
+                <button class="minesButton" onclick="math_expr('-')">-</button>
+                <button class="multButton" onclick="math_expr('*')">*</button>
+                <button class="dotButton" onclick="math_expr('.')">.</button>
+                <button class="divideButton" onclick="math_expr('/')">/</button>
+                <button class="zeroButton" onclick="math_expr(0)">0</button>
+                <button class="oneButton" onclick="math_expr(1)">1</button>
+                <button class="twoButton"onclick="math_expr(2)">2</button>
+                <button class="threeButton"onclick="math_expr(3)">3</button>
+                <button class="fourButton"onclick="math_expr(4)">4</button>
+                <button class="fiveButton"onclick="math_expr(5)">5</button>
+                <button class="sixButton"onclick="math_expr(6)">6</button>
+                <button class="sevenButton"onclick="math_expr(7)">7</button>
+                <button class="eightButton"onclick="math_expr(8)">8</button>
+                <button class="nineButton"onclick="math_expr(9)">9</button>
+            </div>
+            <script src="jquery-3.7.1.min.js"></script>
+            <script src="func.js"></script>
+        </body>
+</html>

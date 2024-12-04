@@ -1,0 +1,236 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image:url('back.png')
+}
+
+html, body {
+    height: 100%; 
+    width: 100%;
+    margin: 0;
+    padding: 0;    
+}
+
+button{
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 3px;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.grid{
+    width: 250px;
+    height: 300px;
+    color: yellow;
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    position: relative;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    row-gap: 4px;
+    column-gap: 4px;
+
+}
+
+.led-display {
+    background-color: black;
+    width: 97.8%;
+    height: 90%;
+    border-radius: 10px;
+    text-align: left;
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 0 15px rgba(255, 255, 102, 0.6);
+    grid-row: 1;
+    grid-column: 1/5;
+    margin-left: 3px;
+    margin-right: 3px;
+
+}
+
+.plusButton{
+    background-color: gray;
+    color: black;
+    grid-row: 4;
+    grid-column: 4;
+}
+
+
+.equalButton{
+    background-color:orange;
+    color: white;
+    grid-column: 4;
+    grid-row: 5;
+    
+}
+
+.minesButton{
+    background-color: gray;
+    color: black;
+    grid-column: 4; 
+    grid-row: 3;
+}
+
+.dotButton{
+    background-color: gray;
+    color: black;
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.multButton{
+    background-color: gray;
+    color: black;
+    grid-column: 4; 
+    grid-row: 2;
+}
+
+.divideButton{
+    background-color: gray;
+    color: black;
+    grid-column: 2; 
+    grid-row: 5;
+}
+
+.zeroButton{
+    background-color: gray;
+    color: black;
+    grid-column: 1; 
+    grid-row: 5;
+}
+
+.oneButton{
+    background-color: gray;
+    color: black;
+    grid-column: 1; 
+    grid-row: 4;
+}
+
+.twoButton{
+    background-color: gray;
+    color: black;
+    grid-column: 2; 
+    grid-row: 4;
+}
+
+.threeButton{
+    background-color: gray;
+    color: black;
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.fourButton{
+    background-color: gray;
+    color: black;
+    grid-column: 1; 
+    grid-row: 3;
+}
+
+.fiveButton{
+    background-color: gray;
+    color: black;
+    grid-column: 2; 
+    grid-row: 3;
+}
+
+.sixButton{
+    background-color: gray;
+    color: black;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.sevenButton{
+    background-color: gray;
+    color: black;
+    grid-column: 1; 
+    grid-row: 2;
+}
+
+.eightButton{
+    background-color: gray;
+    color: black;
+    grid-column: 2; 
+    grid-row: 2;
+}
+
+.nineButton{
+    background-color: gray;
+    color: black;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.dividepic{
+    animation: divide_animation 1s infinite;
+    left: 30px;
+}
+
+.pluspic{
+    animation: plus_animation 1s infinite;
+    right: 30px;
+}
+
+.subpic{
+    animation: sub_animation 1s infinite;
+    top: 5px;
+}
+
+.multpic{
+    animation: mult_animation 2s infinite;
+    bottom: 5px;
+}
+
+
+
+
+@keyframes plus_animation {
+    0%{transform: translateY(20px);}
+    25%{transform: translateY(-20px);}
+    50%{transform: translateY(-20px);}
+    100%{transform: translateY(20px);}
+     
+ }
+
+ @keyframes sub_animation {
+    0%{transform:rotateZ(0deg)}
+    25%{transform: rotateZ(20deg);}
+    50%{transform: rotateZ(-20deg);}
+    100%{transform: rotateZ(0deg);}
+     
+ }
+
+ @keyframes mult_animation {
+    0%{transform: scaleX(0)}
+    25%{transform: scaleX(3)}
+    50%{transform: scaleY(3);}
+    75%{transform: scaleY(-3);}
+    85%{transform: scaleX(-3);}
+    100%{transform: scaleY(0);}   
+ }
+
+@keyframes divide_animation {
+    0%{transform: translateY(20px);}
+    25%{transform: translateY(-20px);}
+    50%{transform: translateY(-20px);}
+    100%{transform: translateY(20px);}
+     
+ }
